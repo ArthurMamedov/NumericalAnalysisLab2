@@ -15,7 +15,7 @@ if DEBUG:
 
 class Graphics:
     def __init__(self):
-        self.style = [ 'r', 'g', 'b', 'r--', 'g--', 'b--', 'r:', 'g:', 'b:']
+        self.style = [ 'yx-', 'g--', 'r', 'r--', 'g--', 'b--', 'r:', 'g:', 'b:']
 
 
     def draw(self, xs: list, ys: list, names: 'list of str', title: str):

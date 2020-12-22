@@ -36,8 +36,8 @@ class LeastSquare:
         self.begin = a
         self.end = b
         self._uzero   = '({}) * x + ({})'.format(*self._solve_system(a0, a1, A, b0, b1, B))
-        self._ufirst  = '(x - ({}))**2 * (x - ({}))**2'.format(a, b)
-        self._usecond = '(x - ({}))**2 * (x - ({}))**2 * x'.format(a, b)
+        self._ufirst  = '(x - ({})) * (x - ({}))'.format(a, b)
+        self._usecond = '(x - ({})) * (x - ({})) * x'.format(a, b)
         self.uzero    = lambda x: eval(self._uzero.replace('x', f'({x})'))
         self.ufirst   = lambda x: eval(self._ufirst.replace('x', f'({x})'))
         self.usecond  = lambda x: eval(self._usecond.replace('x', f'({x})'))
